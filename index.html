@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Scores</title>
+    <link rel="stylesheet" href="scores.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Student Scores</h1>
+      <div class="main-div">
+        <section>
+          <div class="input-div">
+            <label class="label-text">First Name:</label>
+            <input type="text" id="first_name" />
+          </div>
+          <div class="input-div">
+            <label class="label-text">Last Name:</label>
+            <input type="text" id="last_name" />
+          </div>
+          <div class="input-div">
+            <label class="label-text">Score:</label>
+            <input type="text" id="score" />
+          </div>
+          <div class="input-div">
+            <label></label>
+            <input type="button" id="add_button" value="Add Student Score" />
+          </div>
+        </section>
+        <aside>
+          <div class="input-div">
+            <textarea id="scores" rows="10" cols="35" disabled></textarea>
+          </div>
+          <div class="input-div">
+            <label class="label-text">Average score:</label>
+            <label id="avr_score"></label>
+          </div>
+          <div class="input-div">
+            <input
+              type="button"
+              id="clear_button"
+              value="Clear Student Scores"
+            />
+            <input type="button" id="sort_button" value="Sort By Last Name" />
+          </div>
+        </aside>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="scores.js"></script>
+  </body>
+</html>
